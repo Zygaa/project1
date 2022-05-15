@@ -16,3 +16,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+//Route::get('userform', function() {
+//    return view('userform');
+//});
+
+Route::view('userform', 'userform');
+Route::post('usercontroller', [App\Http\Controllers\UserController::class, 'account']);
