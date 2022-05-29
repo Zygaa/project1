@@ -23,3 +23,6 @@ Route::get('/', function () {
 
 Route::view('userform', 'userform');
 Route::post('usercontroller', [App\Http\Controllers\UserController::class, 'account']);
+Route::get('db', [App\Http\Controllers\wsb::class, 'show']);
+Route::view('form', 'form');
+Route::post('userform', [App\Http\Controllers\userform::class, 'show']);
